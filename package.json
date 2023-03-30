@@ -1,6 +1,6 @@
 {
   "name": "levelon-landing",
-  "version": "0.1.0",
+  "version": "0.",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -18,5 +18,10 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.2"
-  }
+  },
+  "description": "levelon",
+  "main": "index.js",
+  "repository": "https://github.com/levelon2022/levelon-landing.git",
+  "author": "levelon 2022",
+  "license": "MIT"
 }

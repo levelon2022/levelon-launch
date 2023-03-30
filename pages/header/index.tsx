@@ -7,3 +7,5 @@ const index = (props: Props) => {
     <div>Helloss</div>
   )
 }
+
+export default index;

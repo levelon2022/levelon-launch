@@ -1,0 +1,28 @@
+@import './variables.scss';
+// Google places 
+.pac-container {
+    font-family: $poppins_regular!important;
+}
+.pac-item, .pac-item-query {
+    font-size: $font_regular!important;
+    height: 40px!important;
+    line-height: 40px!important;
+    border: none;
+}
+.pac-item:hover {
+    background: none;
+}
+.pac-icon {
+    visibility: hidden;
+}
+.hdpi.pac-logo:after {
+    background: none!important;
+}
+
+#launcher-frame {
+    top: 38% !important;
+    right: -32px !important;
+    left: auto  !important;
+    transform: rotate(90deg)  !important; 
+    width: 0;
+}

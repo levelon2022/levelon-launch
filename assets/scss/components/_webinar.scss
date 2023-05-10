@@ -1,0 +1,11 @@
+
+.webinars{
+    width: 100%;
+    height: auto;
+
+    &__main{
+        display: grid;
+       grid-template-columns: repeat(3,1fr);
+       place-items: center;
+      }
+  }

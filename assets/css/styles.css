@@ -1,4 +1,4 @@
-/*=============== GOOGLE FONTS ===============*/
+ /*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
@@ -544,8 +544,482 @@ button{
   animation: floating 2s ease-in-out infinite;
 }
 
+.section_about{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2rem;
+
+}
+
+ h2{
+  font-size: 30px;
+ }
+
+  /*--------About-categories----------------*/
+  .categories{
+    width: 80%;
+    height: auto;
+    color: #181F2E !important;
+    margin: auto;
+
+  }
+  .categories__icon{
+    color: #181F2E !important;
+   display: grid;
+   grid-template-columns: repeat(6,minmax(190px,1fr));
+   gap: 1rem;
+   place-items: center;
+  }
+h2{
+  margin: 20px;
+  text-align: center;
+  color: #181F2E !important;
+}
+.bock__heading{
+  color: #181F2E !important;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 21px;
+}
+.categories__icon__block{
+box-sizing: border-box;
+width: 150px;
+height: 121px;
+background: #FFFFFF;
+border: 1px solid #DAD8D8;
+border-radius: 12px;
+text-align: center;
+box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.25);
+padding-top: 15px;
+
+}
+.categorie-img{
+  height: 54px;
+  width: 54px;
+}
+@media screen and (max-width :1280px) {
+  .categories__icon{
+   grid-template-columns: repeat(auto-fit, minmax(190px,1fr) );
+  }
+}
+
+
+   /*----- services---- */
+
+ .services{
+  margin: auto;
+  width: 80%;
+  height: auto;
+  /* background: linear-gradient(101.3deg, #FFACAC -0.56%, #FFE8B9 100.56%); */
+  margin-top: 4%;
+  padding: 25px;
+  /* justify-items: center; */
+}
+  .cardbox{
+     display: grid;
+     grid-template-columns: repeat(3,minmax(150px , 1fr));
+     gap: 1rem;
+  }
+
+ 
+.offer{
+box-sizing: border-box;
+height: auto;
+background: #FFFFFF;
+border: 1px solid #CABEBE;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+padding:20px;
+}
+.item{
+  display: flex;
+  place-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+.text{
+  color: #181F2E !important;
+  margin-top: 20px;
+  font-size: 15px;
+}
+.item_heading{
+  color: #CD0F0F !important;
+  font-size:20px;
+}
+.icon-img{
+  height: 70px;
+  width: 70px;
+
+}
+.read_more{
+  color: #CD0F0F ;
+}
+@media screen and (max-width :1280px) {
+  .cardbox{
+   grid-template-columns: repeat(auto-fit, minmax(250px,1fr) );
+  }
+}
+
+ 
+  
+  /*--------- workshop and events------------ */
+  .workshop{
+    height: auto;
+    width: 80%;
+    margin: auto;
+
+  }
+  .events{
+    display: flex;
+    margin-top:4%;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+  }
+  .left{
+    color: #181F2E !important;
+    justify-content: left;
+    width: 48%;
+    height: 337px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+
+
+  }
+  .write{
+    width: 48%;
+    height: 337px;
+  }
+  .workshop-lebel{
+    font-weight: 400;
+   font-size: 40px;
+   line-height: 60px;
+  }
+  .workshop-btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+     background-blend-mode: soft-light, normal;
+     box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
+     border-radius: 20px;
+     width: 150px;
+     height: 50px;
+     color: #FFFFFF;
+     justify-items: center;
+     margin-top: 10%;
+     background: linear-gradient(180deg, #CD2E36 0%, rgba(224, 41, 50, 0.69) 100%);
+  }
+ .workshop-txt{
+  margin-top: 4%;
+}
+
+@media screen and (min-width:376px) and (max-width:768px) {
+  .events{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .write{
+    width: 90%;
+    height: 300px;
+
+  }
+  .left{
+    width: 90%;
+    height: 300px;
+
+  }
+  .workshop-lebel{
+    font-weight: 200;
+   font-size: 40px;
+   line-height: 20px;
+  }
+  .workshop-btn {
+    font-size: 25px;
+     width: 200px;
+     height: 80px;
+     margin-top: 8%;
+
+  }
+  .workshop-txt{
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .events{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .write{
+    width: 90%;
+    height: 300px;
+
+  }
+  .left{
+    width: 90%;
+    height:300px;
+    margin-bottom:0px;
+
+  }
+  .workshop-lebel{
+   font-weight: 200px;
+   font-size: 25px;
+   line-height: 15px;
+  }
+  .workshop-btn {
+    font-size: 15px;
+     width: 150px;
+     height: 50px;
+
+  }
+  .workshop-txt{
+    font-size: 15px;
+  }
+}
+ 
+/* experts and seekers */
+.works{
+  width: 80%;
+  margin: auto;
+  height: auto;
+  color: #272525;
+  margin-top: 8%;
+
+}
+.works__main{
+  margin-top: 20px;
+  margin-left: 20%;
+}
+.exp-btn{
+  border:none;
+  background-color:#ffffff;
+  margin-right: 20px;
+  font-size: 20px;
+
+}
+.seeker-btn{
+  width: 90px;
+ height: 30px;
+ background: linear-gradient(180deg, #CD2E36 0%, rgba(224, 41, 50, 0.69) 100%);
+ border-radius: 25px;
+ color: white;
+ font-size: 18px;
+
+}
+.seeker-work{
+  display: flex;
+  margin: 20px 0px 20px ;
+  place-items: center;
+
+}
+.seeker__txt{
+  font-size: 25px;
+  color: #181F2E;
+  margin:20px 0px 20px;
+}
+.works-btn{
+ width: 40px;
+height: 40px;
+background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #CD2E36;
+background-blend-mode: soft-light, normal;
+box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
+border-radius: 10px;
+color: white;
+
+}
+.work-steps{
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.work__industries{
+  display: flex;
+}
+.emp-img{
+  height: 377px;
+
+}
+@media screen and (max-width:360px) {
+  .works__main{
+    margin-left: 2%;
+  }
+  .seeker__txt{
+    font-size: 18px;
+    margin:15px 0px 15px;
+  }
+  .works-btn{
+    width: 30px;
+   height: 30px;
+   border-radius: 5px;
+
+   }
+   .work-steps{
+    font-size: 12px;
+    margin-left: 8px;
+    justify-content:baseline;
+  }
+  .emp-img{
+   height: 277px;
+  
+  }
+}
+ /* mentors in 4 easy steps   */
+ .mentor{
+  width: 80%;
+  margin: auto;
+ }
+ .mentor__main{
+   margin-top:10%;
+   display: grid;
+   grid-template-columns: repeat(2 ,minmax(250px ,500px));
+   column-gap: 2rem;
+ }
+ .mentor__main__img{
+  margin: 0px;
+  text-align: center;
+ }
+ .mentor__main__img__eng {
+  height: 477px;
+ }
+ .mentor__main__steps__txt{
+  font-size: 30px;
+  color: #272525;
+ }
+ .mentor-btn{
+width: 40px;
+height: 40px;
+background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #CD2E36;
+background-blend-mode: soft-light, normal;
+box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
+border-radius: 10px;
+color: white;
+ }
+
+ .easy-steps{
+  color: #272525;
+  margin-left: 10px;
+ }
+ .career{
+  display: flex;
+  margin: 20px 0px 20px ;
+  place-items: center;
+ }
+
+ @media screen and (max-width:360px) {
+  .mentor__main{
+    grid-template-columns: repeat(2 ,minmax(150px ,500px));
+    /* justify-content: center; */
+    column-gap:10px;
+  }
+  .mentor__main__img{
+   margin: 0px;
+   text-align: start;
+  }
+  .mentor__main__img__eng {
+    height: 297px;
+   }
+   .mentor__main__steps__txt{
+    font-size: 12px;
+    margin-bottom: 10px;
+   }
+   .mentor-btn{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+     }
+     .easy-steps{
+      margin-left:5px;
+      font-size: 10px;
+     }
+     .career{
+      margin: 6px 0px 6px ;
+    }
+    
+ }
+
+ /* ----------top experts---------- */
+ .topexperts{
+  width: 80%;
+  height:auto;
+  margin: auto;
+  text-align: center;
+  color: #787878;
+  margin-top:8%;
+ }
+ .topexperts__heading{
+  margin: 30px;
+
+ }
+ .exp-name{
+  color: #181F2E;
+ }
+ .icon-check{
+  background: #4DC4FF;
+ }
+ .topexperts__main{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(250px , 1fr ) );
+  gap: 1rem;
+  justify-content:center;
+  align-items: center;
+ }
+ .exp-item{
+  box-sizing: border-box;
+  height: 381px;
+
+  background: #FBFBFB;
+  border: 1px solid #EBEBEB;
+  box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+ }
+ .expimg{
+  width: 66px;
+  height: 66px;
+  background: #D9D9D9;
+  border-radius: 30px;
+  margin-top: 10px;
+ }
+ .star-icon{
+  color: #FFB800;
+ }
+ .abut-expert{
+  justify-content:baseline;
+ }
+ .skills-btn{
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  padding: 5px;
+  color: #787878;
+
+ }
+ .languages{
+  font-size:10px ;
+  justify-content: space-between;
+  margin-left: 15px;
+ }
+.expert-btn{
+  width: 94px;
+  height: 29px;
+color: white;
+background: #CD2E36;
+border-radius: 30px;
+margin-top: 20px;
+font-size: 12px;
+}
+.exp-name{
+ margin: 0px;
+} 
+@media screen and (max-width :1280px) {
+  .topexperts__main{
+   grid-template-columns: repeat(auto-fit, minmax(250px,1fr) );
+  }
+}
+
 /*=============== TRICK OR TREAT ===============*/
 .trick__container{
+
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   padding-top: 1rem;

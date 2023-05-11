@@ -550,20 +550,16 @@ button{
 
 }
 
- h2{
-  font-size: 30px;
- }
+ 
 
   /*--------About-categories----------------*/
   .categories{
     width: 80%;
     height: auto;
-    color: #181F2E !important;
     margin: auto;
 
   }
   .categories__icon{
-    color: #181F2E !important;
    display: grid;
    grid-template-columns: repeat(6,minmax(190px,1fr));
    gap: 1rem;
@@ -610,9 +606,10 @@ padding-top: 15px;
   width: 80%;
   height: auto;
   /* background: linear-gradient(101.3deg, #FFACAC -0.56%, #FFE8B9 100.56%); */
-  margin-top: 4%;
-  padding: 25px;
-  /* justify-items: center; */
+  margin-top: 2%;
+  /* padding: 25px; */
+  place-items: center;
+
 }
   .cardbox{
      display: grid;
@@ -653,7 +650,7 @@ padding:20px;
 .read_more{
   color: #CD0F0F ;
 }
-@media screen and (max-width :1280px) {
+@media all and (max-width :1280px) {
   .cardbox{
    grid-template-columns: repeat(auto-fit, minmax(250px,1fr) );
   }
@@ -669,17 +666,14 @@ padding:20px;
 
   }
   .events{
-    display: flex;
-    margin-top:4%;
-    height: auto;
-    width: 100%;
-    justify-content: center;
+    display: grid;
+     grid-template-columns: repeat(2,minmax(250px , 1fr));
+     margin-top: 4%; 
+     row-gap: 2rem;
+     column-gap: 10rem;
   }
   .left{
     color: #181F2E !important;
-    justify-content: left;
-    width: 48%;
-    height: 337px;
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
@@ -687,23 +681,23 @@ padding:20px;
 
   }
   .write{
-    width: 48%;
+    width: 100%;
     height: 337px;
   }
   .workshop-lebel{
     font-weight: 400;
-   font-size: 40px;
+   font-size: 30px;
    line-height: 60px;
   }
   .workshop-btn {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
      background-blend-mode: soft-light, normal;
      box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
      border-radius: 20px;
-     width: 150px;
-     height: 50px;
+     width: 120px;
+     height: 40px;
      color: #FFFFFF;
      justify-items: center;
      margin-top: 10%;
@@ -711,6 +705,7 @@ padding:20px;
   }
  .workshop-txt{
   margin-top: 4%;
+  font-size: 18px;
 }
 
 @media screen and (min-width:376px) and (max-width:768px) {
@@ -784,12 +779,11 @@ padding:20px;
   margin: auto;
   height: auto;
   color: #272525;
-  margin-top: 8%;
+  margin-top: 4%;
 
 }
 .works__main{
-  margin-top: 20px;
-  margin-left: 20%;
+  margin: 1%;
 }
 .exp-btn{
   border:none;
@@ -880,10 +874,11 @@ color: white;
   text-align: center;
  }
  .mentor__main__img__eng {
-  height: 477px;
+  height: 377px;
+  
  }
  .mentor__main__steps__txt{
-  font-size: 30px;
+  font-size: 25px;
   color: #272525;
  }
  .mentor-btn{
@@ -946,7 +941,10 @@ color: white;
   text-align: center;
   color: #787878;
   margin-top:8%;
+  place-items: center;
+
  }
+ 
  .topexperts__heading{
   margin: 30px;
 
@@ -959,10 +957,9 @@ color: white;
  }
  .topexperts__main{
   display: grid;
-  grid-template-columns: repeat(4, minmax(250px , 1fr ) );
+  grid-template-columns: repeat(4, minmax(200px , 1fr ) );
   gap: 1rem;
-  justify-content:center;
-  align-items: center;
+  margin: 0;
  }
  .exp-item{
   box-sizing: border-box;

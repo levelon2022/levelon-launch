@@ -19,6 +19,144 @@ if(navClose){
     })
 }
 
+/*=======Expert and Seeker Button======*/
+var expert = document.getElementById("expert");
+var seeker = document.getElementById("seeker");
+
+var expimg = document.getElementById('expert_img');
+var seekerimg = document.getElementById('seeker__img');
+
+var contentElement2 = document.getElementById('expert-content');
+var contentElement1 = document.getElementById('seeker-content');
+
+function exchangeContent() {
+    var content1 = contentElement1.textContent;
+    var content2 = contentElement2.textContent;
+  
+    contentElement1.textContent = content2;
+    contentElement2.textContent = content1;
+  }
+
+  expert.addEventListener("click",exchangeContent=>{
+    contentElement2.classList.remove("expseeker-content");
+    contentElement1.classList.add("expseeker-content");
+  
+  });
+  seeker.addEventListener("click",exchangeContent=>{
+    contentElement2.classList.add("expseeker-content");
+    contentElement1.classList.remove("expseeker-content");
+  
+  });
+
+  
+  
+
+
+
+expert.addEventListener("click", function() {
+  expert.classList.toggle("active-btn");
+  seeker.classList.remove("active-btn");
+
+  expimg.classList.remove("emp-img");
+  seekerimg.classList.add("emp-img");
+
+
+});
+
+seeker.addEventListener("click", function() {
+  seeker.classList.toggle("active-btn");
+  expert.classList.remove("active-btn");
+
+  expimg.classList.add("emp-img");
+  seekerimg.classList.remove("emp-img");
+
+
+
+
+});
+
+
+
+
+
+
+/*------Top experties slider-------*/
+// <!-- Initialize Swiper -->
+
+
+    const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+  
+    if (viewportWidth <= 414) {
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    }
+  
+ else if (viewportWidth <= 912){ 
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    
+    } 
+    else{
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            centeredSlides: true,
+            spaceBetween: 30,
+            pagination: {
+              el: ".swiper-pagination",
+              type: "fraction",
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+    }
+
+/*---------Catgories slider in mobile application------------*/
+
+// const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+
+
+  if (viewportWidth <= 414) {
+    var swiper = new Swiper(".catslider", {
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+     }
+
+
+
 /*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll('.nav__link')
 

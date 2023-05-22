@@ -48,12 +48,7 @@ function exchangeContent() {
   
   });
 
-  
-  
-
-
-
-expert.addEventListener("click", function() {
+  expert.addEventListener("click", function() {
   expert.classList.toggle("active-btn");
   seeker.classList.remove("active-btn");
 
@@ -69,93 +64,7 @@ seeker.addEventListener("click", function() {
 
   expimg.classList.add("emp-img");
   seekerimg.classList.remove("emp-img");
-
-
-
-
 });
-
-
-
-
-
-
-/*------Top experties slider-------*/
-// <!-- Initialize Swiper -->
-
-
-    const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-  
-    if (viewportWidth <= 414) {
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        centeredSlides: true,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          type: "fraction",
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    }
-  
- else if (viewportWidth <= 912){ 
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-        centeredSlides: true,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          type: "fraction",
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    
-    } 
-    else{
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 4,
-            centeredSlides: true,
-            spaceBetween: 30,
-            pagination: {
-              el: ".swiper-pagination",
-              type: "fraction",
-            },
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-          });
-    }
-
-/*---------Catgories slider in mobile application------------*/
-
-// const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-
-
-  if (viewportWidth <= 414) {
-    var swiper = new Swiper(".catslider", {
-        slidesPerView: 3,
-        centeredSlides: true,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          type: "fraction",
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-     }
-
-
 
 /*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll('.nav__link')

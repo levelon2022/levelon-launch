@@ -40,7 +40,9 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">
-                <img src="assets/img/logo.png" alt="" class="nav__logo-img">
+                <!-- <img src="assets/img/logo.png" alt="" class="nav__logo-img"> -->
+                <img src="assets/img/levelon-logo.png" alt="" class="nav__logo-img">
+
                 <!-- Halloween -->
             </a>
 
@@ -76,14 +78,17 @@
             </div>
 
         </nav>
-    </header>
-    <main class="main">
         <hr/>
+    </header>
+   
+    <main class="main">
+        
 
         <!--==================== HOME ====================-->
         
 
         <section class="home" id="home">
+          
             <div class="swiper home-swiper containers">
                 <div class="swiper-wrapper">
                     <!-- HOME SLIDER 1 -->
@@ -124,7 +129,8 @@
                 <!-- <div class="swiper-pagination"></div> -->
             </div>
         </section>
-        <section class="slick">
+       
+        <!-- <section class="slick">
             <h2 class="slick__title">Over 100+ companies joined us</h2>
             <div class="slick-slider">
                 <img class="element" src="https://adplist.org/supporters/s6.svg" />
@@ -139,7 +145,7 @@
 
 
             </div>
-        </section>
+        </section> -->
 
 
         <!--==================== CATEGORY ====================-->
@@ -203,7 +209,7 @@
 
         <!-- experts and seekers -->
 
-        <section class="works">
+        <section class=" works">
             <h2> How it Works </h2>
             <div class="works__main">
                 <button class="exp-btn active-btn" id="expert"> Experts </button>
@@ -211,10 +217,11 @@
 
                 <div class=" work__industries ">
                     <div class="works__main__steps">
-                        <p class="seeker__txt">As a seeker you can connect with experts
-                            from the various industries
-                        </p>
+                        
                         <div class="expseeker-content" id="seeker-content">
+                            <p class="seeker__txt">As a seeker you can connect with experts
+                                from the various industries
+                            </p>
                         <div class="seeker-work">
                             <div><button class="works-btn"> > </button> </div>
                             <div>
@@ -239,9 +246,13 @@
                                 <p class="work-steps">Connect with your expert</p>
                             </div>
                         </div>
+                       
+    
                     </div>
 
                     <div class="expseeker-content" id="expert-content">
+                        <p class="seeker__txt">As an expert, You offer your industry-specific knowledge and insights to seekers, 
+                            providing personalized guidance and valuable assistance.</p>
                         <div class="seeker-work">
                             <div><button class="works-btn"> > </button> </div>
                             <div>
@@ -267,87 +278,137 @@
                             </div>
                         </div>
                     </div>
-
-
-
-                    </div>
-                    <div class="expseeker-btn">
+                </div>
+                    <div class="expseeker-img">
                         <img src="assets/img/employee.png" class="emp-img" id="seeker__img" />
                         <img src="assets/img/nice_to_meet_u.png" class="emp-img" id="expert_img" />
 
-
                     </div>
                 </div>
-            </div>
+        
+             </div>
         </section>
 
         <!-- top categories -->
-        <section style="padding-top: 0.1rem;" class="categories swiper catslider" id="about">
+        <section class="categories " id="about">
             <h2> Our Top Categories </h2>
 
-            <div class="categories__icon swiper-wrapper ">
-                <div class=" categories__icon__block swiper-slide">
+            <div class="categories__icon ">
+                <div class=" categories__icon__block ">
                     <img src="assets/img/disigner.png" class=" categorie-img " />
                     <h3 class="bock__heading">Designer</h3>
                 </div>
-                <div class="categories__icon__block swiper-slide">
+                <div class="categories__icon__block">
                     <img src="assets/img/software.png" class=" categorie-img " />
                     <h3 class="bock__heading">Software Engineer</h3>
                 </div>
-                <div class="categories__icon__block swiper-slide">
+                <div class="categories__icon__block ">
                     <img src="assets/img/data-anlyst.png" class=" categorie-img " />
                     <h3 class="bock__heading">Data analyst</h3>
                 </div>
-                <div class="categories__icon__block swiper-slide">
+                <div class="categories__icon__block ">
                     <img src="assets/img/human-resources.png" class=" categorie-img " />
                     <h3 class="bock__heading">Human resources</h3>
                 </div>
-                <div class="categories__icon__block swiper-slide">
+                <div class="categories__icon__block ">
                     <img src="assets/img/sales-marketing.png" class=" categorie-img " />
                     <h3 class="bock__heading">Sales & marketing</h3>
                 </div>
-                <div class="categories__icon__block swiper-slide">
+                <div class="categories__icon__block">
                     <img src="assets/img/finance.png" class=" categorie-img " />
                     <h3 class="bock__heading">Finance</h3>
                 </div>
-                <div class="categories__icon__block swiper-slide">
+                <div class="categories__icon__block ">
                     <img src="assets/img/balance.png" class=" categorie-img " />
                     <h3 class="bock__heading">Law</h3>
                 </div>
-                <div class="categories__icon__block swiper-slide">
+                <div class="categories__icon__block ">
                     <img src="assets/img/medical.png" class=" categorie-img " />
                     <h3 class="bock__heading">Medical</h3>
                 </div>
-                <div class="categories__icon__block swiper-slide">
+                <div class="categories__icon__block ">
                     <img src="assets/img/real-estet.png" class=" categorie-img " />
                     <h3 class="bock__heading">Real Estate</h3>
                 </div>
-                <div class="categories__icon__block swiper-slide">
+                <div class="categories__icon__block ">
                     <img src="assets/img/classroom.png" class=" categorie-img " />
                     <h3 class="bock__heading">Teacher</h3>
                 </div>
-                <div class="categories__icon__block swiper-slide">
+                <div class="categories__icon__block ">
                     <img src="assets/img/agriculture.png" class=" categorie-img " />
                     <h3 class="bock__heading">Agriculture </h3>
                 </div>
-                <div class="categories__icon__block swiper-slide">
+                <div class="categories__icon__block">
                     <img src="assets/img/sports.png" class=" categorie-img " />
                     <h3 class="bock__heading">Sports</h3>
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-
         </section>
+
+                <!-- top categories auto slider in mobile view -->
+                <section class="categories-mibileview slick">
+                    <h2> Our Top Categories</h2>
+        
+                    <div class="categories__icon slick-sliders ">
+                        <div class=" categories__icon__mobile ">
+                            <img src="assets/img/disigner.png" class=" categorie_img " />
+                            <h3 class="bock__heading">Designer</h3>
+                        </div>
+                        <div class="categories__icon__mobile">
+                            <img src="assets/img/software.png" class=" categorie_img " />
+                            <h3 class="bock__heading">Software Engineer</h3>
+                        </div>
+                        <div class="categories__icon__mobile ">
+                            <img src="assets/img/data-anlyst.png" class=" categorie_img " />
+                            <h3 class="bock__heading">Data analyst</h3>
+                        </div>
+                        <div class="categories__icon__mobile ">
+                            <img src="assets/img/human-resources.png" class=" categorie_img " />
+                            <h3 class="bock__heading">Human resources</h3>
+                        </div>
+                        <div class="categories__icon__mobile ">
+                            <img src="assets/img/sales-marketing.png" class=" categorie_img " />
+                            <h3 class="bock__heading">Sales & marketing</h3>
+                        </div>
+                        <div class="categories__icon__mobile">
+                            <img src="assets/img/finance.png" class=" categorie_img " />
+                            <h3 class="bock__heading">Finance</h3>
+                        </div>
+                        <div class="categories__icon__mobile ">
+                            <img src="assets/img/balance.png" class=" categorie_img " />
+                            <h3 class="bock__heading">Law</h3>
+                        </div>
+                        <div class="categories__icon__mobile ">
+                            <img src="assets/img/medical.png" class=" categorie_img " />
+                            <h3 class="bock__heading">Medical</h3>
+                        </div>
+                        <div class="categories__icon__mobile ">
+                            <img src="assets/img/real-estet.png" class=" categorie_img " />
+                            <h3 class="bock__heading">Real Estate</h3>
+                        </div>
+                        <div class="categories__icon__mobile ">
+                            <img src="assets/img/classroom.png" class=" categorie_img " />
+                            <h3 class="bock__heading">Teacher</h3>
+                        </div>
+                        <div class="categories__icon__mobile ">
+                            <img src="assets/img/agriculture.png" class=" categorie_img " />
+                            <h3 class="bock__heading">Agriculture </h3>
+                        </div>
+                        <div class="categories__icon__mobile">
+                            <img src="assets/img/sports.png" class=" categorie_img " />
+                            <h3 class="bock__heading">Sports</h3>
+                        </div>
+                    </div>
+                </section>
+        
+
         <!-- top experts -->
-        <section class="topexperts swiper mySwiper">
+        <section class="section topexperts slick">
             <h2 class="topexperts__heading"> Our Top Expertise From Various Industries </h2>
-            <div class="topexperts__main swiper-wrapper ">
-                <div class="exp-item swiper-slide">
-                    <div><img src="assets/img/expert-img.png" class=" expimg " />
-                        <i class="fa fa-badge-check icon-check"></i>
-                        <i class="fa-sharp fa-solid fa-badge-check"></i>
-                        <i class="fa-duotone fa-badge-check"></i>
+            <div class="topexperts__main slick-sliders ">
+                <div class="exp-item ">
+                    <div class="topexpert-img">
+                        <img src="assets/img/expert-img.png" class=" expimg " />
                     </div>
                     <h3 class="exp-name"> Ravindra Dara </h3>
                     <p class="star-icon">
@@ -371,8 +432,11 @@
                     <button class="expert-btn">Book Now</button>
                 </div>
 
-                <div class="exp-item swiper-slide">
+                <div class="exp-item ">
+                    <div class="topexpert-img">
+
                     <img src="assets/img/expert-img.png" class=" expimg " />
+                    </div>
                     <h3 class="exp-name"> Ravindra Dara </h3>
                     <p class="star-icon">
                         <i class="fa-solid fa-star"></i>
@@ -394,8 +458,11 @@
 
                     <button class="expert-btn">Book Now</button>
                 </div>
-                <div class="exp-item swiper-slide">
+                <div class="exp-item ">
+                    <div class="topexpert-img">
+
                     <img src="assets/img/expert-img.png" class=" expimg " />
+                    </div>
                     <h3 class="exp-name"> Ravindra Dara </h3>
                     <p class="star-icon">
                         <i class="fa-solid fa-star"></i>
@@ -417,8 +484,11 @@
 
                     <button class="expert-btn">Book Now</button>
                 </div>
-                <div class="exp-item swiper-slide">
+                <div class="exp-item ">
+                    <div class="topexpert-img">
+
                     <img src="assets/img/expert-img.png" class=" expimg " />
+                    </div>
                     <h3 class="exp-name"> Ravindra Dara </h3>
                     <p class="star-icon">
                         <i class="fa-solid fa-star"></i>
@@ -440,8 +510,11 @@
 
                     <button class="expert-btn">Book Now</button>
                 </div>
-                <div class="exp-item swiper-slide">
+                <div class="exp-item ">
+                    <div class="topexpert-img">
+
                     <img src="assets/img/expert-img.png" class=" expimg " />
+                    </div>
                     <h3 class="exp-name"> Ravindra Dara </h3>
                     <p class="star-icon">
                         <i class="fa-solid fa-star"></i>
@@ -465,10 +538,6 @@
                 </div>
             </div>
 
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <!-- <div class="swiper-pagination"></div> -->
-       
         </section>
 
         <!-- mentors in 4 easy steps   -->
@@ -518,12 +587,12 @@
         </section>
 
         <!-- services we offer -->
-        <section class="services swiper mySwiper" id="services " style="padding-top: 0.1rem;">
-            <h2>Services we offer</h2>
+        <section class="services slick" id="services " style="padding-top: 0.1rem;">
+            <h2 >Services we offer</h2>
 
-            <div class="cardbox swiper-wrapper">
+            <div class="cardbox slick-sliders">
 
-                <div class="offer swiper-slide">
+                <div class="offer ">
                     <div class="item">
                         <img src="assets/img/resume.png" class="icon-img" />
                         <h2 class="item_heading"> Resume review </h2>
@@ -531,16 +600,14 @@
                     <div class="text">
 
                         <p>
-                            Despite its vast library, there are many titles to which Netflix can not provide access.
-
-                        <details>
+                             <details>
                             <summary class="read_more"><a href="./OurServices/index.html"> Read more</a></summary>
 
                         </details>
                         </p>
                     </div>
                 </div>
-                <div class="offer swiper-slide">
+                <div class="offer ">
                     <div class="item">
                         <img src="assets/img/career.png" class="icon-img" />
                         <h2 class="item_heading"> Career Gudinece </h2>
@@ -548,16 +615,14 @@
                     <div class="text">
 
                         <p>
-                            Despite its vast library, there are many titles to which Netflix can not provide access.
-
-                        <details>
+                            <details>
                             <summary class="read_more"><a href="./OurServices/index.html">Read more</a></summary>
 
                         </details>
                         </p>
                     </div>
                 </div>
-                <div class="offer swiper-slide">
+                <div class="offer ">
                     <div class="item">
                         <img src="assets/img/camera.png" class="icon-img" />
                         <h2 class="item_heading"> Mock Inverviews </h2>
@@ -565,33 +630,29 @@
                     <div class="text">
 
                         <p>
-                            Despite its vast library, there are many titles to which Netflix can not provide access.
-
-                        <details>
+                            <details>
                             <summary class="read_more"><a href="./OurServices/index.html">Read more</a></summary>
 
                         </details>
                         </p>
                     </div>
                 </div>
-                <div class="offer swiper-slide">
+                <div class="offer">
                     <div class="item">
                         <img src="assets/img/alarm.png" class="icon-img" />
-                        <h2 class="item_heading"> Mock Inverviews </h2>
+                        <h2 class="item_heading"> Mentor Ship </h2>
                     </div>
                     <div class="text">
 
                         <p>
-                            Despite its vast library, there are many titles to which Netflix can not provide access.
-
-                        <details>
+                            <details>
                             <summary class="read_more"><a href="./OurServices/index.html">Read more</a></summary>
 
                         </details>
                         </p>
                     </div>
                 </div>
-                <div class="offer swiper-slide">
+                <div class="offer ">
                     <div class="item">
                         <img src="assets/img/review.png" class="icon-img" />
                         <h2 class="item_heading"> Project Review </h2>
@@ -599,16 +660,14 @@
                     <div class="text">
 
                         <p>
-                            Despite its vast library, there are many titles to which Netflix can not provide access.
-
-                        <details>
+                             <details>
                             <summary class="read_more"><a href="./OurServices/index.html">Read more</a></summary>
 
                         </details>
                         </p>
                     </div>
                 </div>
-                <div class="offer swiper-slide">
+                <div class="offer ">
                     <div class="item">
                         <img src="assets/img/link.png" class="icon-img" />
                         <h2 class="item_heading"> Let’s connect </h2>
@@ -616,9 +675,7 @@
                     <div class="text">
 
                         <p>
-                            Despite its vast library, there are many titles to which Netflix can not provide access.
-
-                        <details>
+                            <details>
                             <summary class="read_more"><a href="./OurServices/index.html">Read more</a></summary>
 
                         </details>
@@ -626,12 +683,9 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-
         </section>
 
-        <section class="workshop">
+        <section class=" workshop">
             <h1 class="workshop_header"> Workshop and events</h1>
 
             <div class="events">
@@ -640,9 +694,10 @@
                     <h1 class="workshop-header"> Workshop and events</h1>
 
                     <p class="workshop-txt">
-
-                        Register yourself for best workshops & events .
-                        Book tickets for upcoming workshops & events.
+                        Resister yourself for best workshops
+                        & events . Book tickets for upcoming
+                        workshops & events.
+                        
                     </p>
                     <button class="workshop-btn">Book Tickets</button>
                 </div>
@@ -771,7 +826,7 @@
             </section> -->
 
         <!--==================== DISCOUNT ====================-->
-        <section style="padding-bottom: 4rem;" class="discount-sec">
+        <section style="padding-bottom: 4rem;" class=" discount-sec">
             <h2 style="margin-top: 25px;  padding-top: 3rem;" class="slick__title">Here what our members are saying</h2>
             <div class="slick-sliders">
                 <div class="elements">
@@ -912,10 +967,13 @@
         <div class="footer__container container grid">
             <div class="footer__content">
                 <a href="#" class="footer__logo">
-                    <img src="assets/img/logo.png" alt="" class="footer__logo-img">
+                    <!-- <img src="assets/img/logo.png" alt="" class="footer__logo-img"> -->
+                    <img src="assets/img/levelon_logo.png" alt="" class="footer__logo-img">
+
+
                 </a>
 
-                <p class="footer__description">Connect With experties <br> And tune your life.</p>
+                <p class="footer__description">Connect with experties And tune your life.</p>
 
                 <div class="footer__social">
                     <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
@@ -935,7 +993,7 @@
 
                 <ul class="footer__links">
                     <li>
-                        <a href="./AboutUs/index.html" target="_blank" class="footer__link">Home</a>
+                        <a href="./AboutUs/index.html" target="_self" class="footer__link">Home</a>
                     </li>
                     <li>
                         <a href="#" class="footer__link">About Us</a>
@@ -946,8 +1004,8 @@
 
                 </ul>
                 <button class="webapp-btn"> Launch Webapp </button>
-
             </div>
+
 
             <div class="footer__content">
                 <h3 class="footer__title">Our Services</h3>
@@ -992,6 +1050,24 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Help </h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Help Center </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Career</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Join Us</a>
+                    </li>
+                </ul>
+            </div>
+
+
         </div>
 
         <span class="footer__copy">&#169; All right 2023 reserved by @ Levelon Technologies PVT LTD</span>
